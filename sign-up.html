@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.ibb.co/20TjfGQt/nike.png" type="image/x-icon">
+    <title>Welcome to Nike - Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: left;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            height: 50px;
+            padding-top: 5px
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: normal;
+            margin-bottom: 0px;
+            text-align: left;
+        }
+
+        .codeSent {
+            line-height: 8px;
+            margin-bottom: 20px;
+            text-align: left;}
+
+        .editEmail {
+            color: #757575;
+            text-decoration: underline;
+        }
+
+        .codeInput{
+            width: 100%;
+            padding: 18px;
+            margin-top: 16px;
+            margin-bottom: 10px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .firstNameInput{
+            width: 47%;
+            padding: 18px;
+            margin-top: 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .surnameInput{
+            width: 47%;
+            padding: 18px;
+            margin-top: 16px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .passwordInput{
+            width: 100%;
+            padding: 18px;
+            margin-top: 16px;
+            margin-bottom: 0px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .textInput:hover{
+            border: 1px solid black;
+        }
+
+        .createAccBtn {
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            max-width: 165px;
+        }
+
+        .createAccBtn:hover {
+            background-color: #696969;
+        }
+
+        .pwdreqs {
+            font-size: 12px;
+            color: #757575;
+            margin-bottom: 5px;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        #shoppingPreference {
+            width: 100%;
+            padding: 18px;
+            margin-top: 16px;
+            margin-bottom: 30px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .dobLabel {
+            font-size: 14px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .dayInput, .monthInput, .yearInput {
+            width: 28%;
+            padding: 18px;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            margin-right: 6px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .yearInput {
+            width: 39%;
+            margin-right: 0px;
+        }
+
+        .dayInput:hover, .monthInput:hover, .yearInput:hover {
+            border: 1px solid black;
+        }
+
+        .memRew {
+            font-size: 12px;
+            color: #757575;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .mailsSignUp, .terms {
+            margin-left: 0px;
+            font-size: 16px;
+            margin-bottom: 30px;
+            text-align: left;
+            line-height: 22px;
+        }
+
+        .terms a {
+            color: black;
+        }
+
+        #emailsCheckbox {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logos">
+            <img src="https://i.ibb.co/20TjfGQt/nike.png" alt="Nike Logo" class="logo">
+            <img src="https://i.ibb.co/7Nj9G4DZ/jordan.png" alt="Jordan Logo" class="logo" style="height: 35px; padding-top: 10px">
+        </div>
+        
+        <h1>Now let's make you a Nike Member.</h1>
+        
+        <div class="codeSent">
+            <p>We've sent a code to</p>
+            <p><b>youremail@gmail.com</b> <a href="#" class="editEmail">Edit</a></p>
+        </div>
+        
+        <form>
+            <input type="text" class="textInput codeInput" placeholder="Code*" required>
+            
+            <input type="text" class="textInput firstNameInput" placeholder="First Name*" required>
+
+            <input type="text" class="textInput surnameInput" placeholder=" Surname*" required>
+
+            <input type="password" class="textInput passwordInput" placeholder="Password*" required>
+
+            <div class="pwdreqs">
+                <ul style="list-style-type: none; padding: 0; text-align: left;">
+                    <li><span style="color: gray;">X</span>&nbsp;&nbsp;&nbsp;Minimum of 8 characters</li>
+
+                    <li>X&nbsp;&nbsp;&nbsp;Uppercase, lowercase letters and one number</li>
+                </ul>
+            </div>
+
+            <select name="shoppingPreference" id="shoppingPreference">
+                <option value="">Shopping Preference*</option>
+                <option value="men">Men's</option>
+                <option value="women">Women's</option>
+            </select>
+
+            <div class="dobLabel">
+                <label for="dob">Date of Birth</label>
+            </div>
+
+            <input type="text" id="dob" class="textInput dayInput" placeholder="Day*" required>
+
+            <input type="text" class="textInput monthInput" placeholder="Month*" required>
+
+            <input type="text" class="textInput yearInput" placeholder="Year*" required>
+
+            <div class="memRew">
+                Get a Nike Member Reward on your birthday.
+            </div>
+
+            <div class="mailsSignUp">
+                <input type="checkbox" name="emails" id="emailsCheckbox">
+                <label for="emailsCheckbox">Sign up for emails to get updates from Nike on <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;products, offers and your Member benefits.</label>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="pp_tou" name="pp_tou" required>
+                <label for="pp_tou">I have agreed to Nike's <b><a href="">Privacy Policy</a></b> and <b><a href="">Terms of Use</a></b>.</label>
+            </div>
+            
+            <div style="display: flex; justify-content: flex-end;">
+                <button type="submit" class="createAccBtn" onclick="validateForm(event)">Create Account</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); 
+
+            var code = document.querySelector('.codeInput').value;
+            var firstName = document.querySelector('.firstNameInput').value;
+            var surname = document.querySelector('.surnameInput').value;
+            var password = document.querySelector('.passwordInput').value;
+            var shoppingPreference = document.getElementById('shoppingPreference').value;
+            var day = document.querySelector('.dayInput').value;
+            var month = document.querySelector('.monthInput').value;
+            var year = document.querySelector('.yearInput').value;
+
+            // Empty value prevention
+            if (code == ""){
+                alert("Please enter the code sent to your email.");
+                document.querySelector('.codeInput').style.border = "1px solid red";
+                return;
+            }
+            else {
+                document.querySelector('.codeInput').style.border = "1px solid grey";
+            }
+            if (firstName == "") {
+                alert("Please enter your first name.");
+                document.querySelector('.firstNameInput').style.border = "1px solid red";
+                return;
+            }
+            else {
+                document.querySelector('.firstNameInput').style.border = "1px solid grey";
+            }
+            if (surname == "") {
+                alert("Please enter your surname.");
+                document.querySelector('.surnameInput').style.border = "1px solid red";
+                return;
+            }
+            else {
+                document.querySelector('.surnameInput').style.border = "1px solid grey";
+            }
+            if (password == "") {
+                alert("Please enter your password.");
+                document.querySelector('.passwordInput').style.border = "1px solid red";
+                return;
+            }
+            else {
+                document.querySelector('.passwordInput').style.border = "1px solid grey";
+            }
+            if (shoppingPreference == "") {
+                alert("Please select your shopping preference.");
+                document.getElementById('shoppingPreference').style.border = "1px solid red";
+                return;
+            }
+            else {
+                document.getElementById('shoppingPreference').style.border = "1px solid grey";
+            }
+            if (day == "") {
+                alert("Please enter your day of birth.");
+                document.querySelector('.dayInput').style.border = "1px solid red";
+                return;
+            }
+            else {
+                document.querySelector('.dayInput').style.border = "1px solid grey";
+            }
+            if (month == "") {
+                alert("Please enter your month of birth.");
+                document.querySelector('.monthInput').style.border = "1px solid red";
+                return;
+            }
+            else {
+                document.querySelector('.monthInput').style.border = "1px solid grey";
+            }
+            if (year == "") {
+                alert("Please enter your year of birth.");
+                document.querySelector('.yearInput').style.border = "1px solid red";
+                return;
+            }
+            else {
+                document.querySelector('.yearInput').style.border = "1px solid grey";
+            }
+            if (document.getElementById('pp_tou').checked) {
+                document.getElementById('pp_tou').style.border = "1px solid grey";
+            } else {
+                document.getElementById('pp_tou').style.border = "1px solid red";
+                alert("Please agree to the Privacy Policy and Terms of Use.");
+                return;
+            }
+            if (document.getElementById('emailsCheckbox').checked) {
+                document.getElementById('emailsCheckbox').style.border = "1px solid grey";
+            }
+
+            // Data type validation
+            if (code.length < 4) {
+                alert("Code must be at least 4 characters long.");
+                document.querySelector('.codeInput').style.border = "1px solid red";
+                document.querySelector('.codeInput').innerHTML = "";
+                return;
+            }
+            if (!/^[a-zA-Z]+$/.test(firstName)) {
+                alert("First name can only contain letters.");
+                document.querySelector('.firstNameInput').style.border = "1px solid red";
+                return;
+            }
+            if (!/^[a-zA-Z]+$/.test(surname)) {
+                alert("Surname can only contain letters.");
+                document.querySelector('.surnameInput').style.border = "1px solid red";
+                return;
+            }
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                document.querySelector('.passwordInput').style.border = "1px solid red";
+                return;
+            }
+
+            const hasUpper = /[A-Z]/.test(password);
+            const hasLower = /[a-z]/.test(password);
+            const hasNumber = /\d/.test(password);
+
+            if (!hasUpper || !hasLower || !hasNumber) {
+                alert("Password must contain at least one uppercase letter, one lowercase letter, and one number.");
+                document.querySelector('.passwordInput').style.border = "1px solid red";
+                return;
+            }
+            if (!/^\d+$/.test(day)) {
+                alert("Day must be a number.");
+                document.querySelector('.dayInput').style.border = "1px solid red";
+                return;
+            }
+            if (day < 1 || day > 31) {
+                alert("Please enter a valid day.");
+                document.querySelector('.dayInput').style.border = "1px solid red";
+                return;
+            }
+            if (!/^\d+$/.test(month)) {
+                alert("Month must be a number.");
+                document.querySelector('.monthInput').style.border = "1px solid red";
+                return;
+            }
+            if (month < 1 || month > 12) {
+                alert("Please enter a valid month.");
+                document.querySelector('.monthInput').style.border = "1px solid red";
+                return;
+            }
+            if (!/^\d+$/.test(year)) {
+                alert("Year must be a number.");
+                document.querySelector('.yearInput').style.border = "1px solid red";
+                return;
+            }
+            if (year < 1900 || year > new Date().getFullYear()) {
+                alert("Please enter a valid year.");
+                document.querySelector('.yearInput').style.border = "1px solid red";
+                return;
+            }
+            if (code && firstName && surname && password && shoppingPreference && day && month && year) {
+                alert("Form submitted successfully!");
+                clearForm();
+            } 
+            
+        }
+
+        function clearForm() {
+            document.querySelector('.codeInput').value = "";
+            document.querySelector('.firstNameInput').value = "";
+            document.querySelector('.surnameInput').value = "";
+            document.querySelector('.passwordInput').value = "";
+            document.getElementById('shoppingPreference').value = "";
+            document.querySelector('.dayInput').value = "";
+            document.querySelector('.monthInput').value = "";
+            document.querySelector('.yearInput').value = "";
+            document.getElementById('pp_tou').checked = false;
+            document.getElementById('emailsCheckbox').checked = false;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.ibb.co/20TjfGQt/nike.png" type="image/x-icon">
+    <title>Welcome to Nike - Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: left;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            height: 50px;
+            padding-top: 5px
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: normal;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .countrySelector {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .changeLink {
+            color: #757575;
+            text-decoration: underline;
+        }
+
+        .emailInput{
+            width: 100%;
+            padding: 18px;
+            margin-top: 16px;
+            margin-bottom: 35px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .emailInput:hover{
+            border: 1px solid black;
+        }
+
+        .terms {
+            font-size: 16px;
+            color: #757575;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .terms a {
+            color: #757575;
+            text-decoration: underline;
+        }
+
+        .continueBtn {
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            max-width: 120px;
+        }
+
+        .continueBtn:hover {
+            background-color: #696969;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logos">
+            <img src="https://i.ibb.co/20TjfGQt/nike.png" alt="Nike Logo" class="logo">
+            <img src="https://i.ibb.co/7Nj9G4DZ/jordan.png" alt="Jordan Logo" class="logo" style="height: 35px; padding-top: 10px">
+        </div>
+        
+        <h1>Enter your email to join us or sign in.</h1>
+        
+        <div class="countrySelector">
+            <p>Sri Lanka</p>
+            <a href="#" class="changeLink">Change</a>
+        </div>
+        
+        <form>
+            <input type="email" class="emailInput" placeholder="Email*" required>
+            
+            <div class="terms">
+                By continuing, I agree to Nike's <a href="#">Privacy Policy</a> <br>and <a href="#">Terms of Use</a>.
+            </div>
+            
+            <div style="display: flex; justify-content: flex-end;">
+                <button type="button" class="continueBtn" onclick="loadNextPage()">Continue</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+      function loadNextPage() {
+        var email = document.querySelector('.emailInput').value;
+
+        if (email == "") {
+          alert("Please enter your email.");
+          return;
+        }
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+          alert("Please enter a valid email address.");
+          return;
+        }
+        window.location.href = "sign-up.html"; 
+      }
+    </script>
+</body>
+</html>

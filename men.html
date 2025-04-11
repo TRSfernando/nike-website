@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="shortcut icon" href="https://i.ibb.co/20TjfGQt/nike.png" type="image/x-icon">
+    <title>Nike. Just Do It. Nike AU</title>
+
+
+  </head>
+  <body>
+    <header>
+      <!-- First Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://i.ibb.co/7Nj9G4DZ/jordan.png" alt="Jordan" height="24">
+          </a>
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="navbarNav1">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item" style="border-right: 1px solid black;"><a href="#" class="nav-link">Find a Store</a></li>
+              <li class="nav-item" style="border-right: 1px solid black;"><a href="#" class="nav-link">Help</a></li>
+              <li class="nav-item" style="border-right: 1px solid black;"><a href="#" class="nav-link">Join Us</a></li>
+              <li class="nav-item"><a href="./profile.html" target="_blank" class="nav-link">Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Second Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid px-4">
+          <!-- Logo -->
+          <a class="navbar-brand" href="./index.html"><img src="https://i.ibb.co/20TjfGQt/nike.png" alt="Nike" height="40" width="auto"></a>
+
+          <!-- Mobile View Items-->
+          <div class="row">
+            <div class="d-flex gap-3 align-items-center ms-auto d-lg-none" style="width: 100%;">
+              <ul class="navbar-nav ms-auto d-flex flex-row gap-3">
+                <li class="nav-item"><a href="#"><img src="https://i.ibb.co/SXQSf00V/search.png" alt="Search" height="26px" width="auto"></a></li>
+                <li class="nav-item"><a href="#"><span class="ph--user-thin"></span></a></li>
+                <li class="nav-item"><a href="#"><span class="ph--bag-light"></span></a></li>
+              </ul>
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nikeNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+  
+          </div>
+      
+          <!-- Nav links -->
+          <div class="collapse navbar-collapse" id="nikeNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto fw-semibold" style="transform: translateX(50%);">
+              <li class="nav-item">
+                <a href="#" class="nav-link">New and Featured</a>
+              </li>
+              <li class="nav-item">
+                <a href="./men.html" class="nav-link">Men</a>
+              </li>
+              <li class="nav-item">
+                <a href="./women.html" class="nav-link">Women</a>
+              </li>
+              <li class="nav-item">
+                <a href="./kids.html" class="nav-link">Kids</a>
+              </li>
+            </ul>
+      
+            <!--Desktop Icons -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <form class="d-flex bg-light" style="border: 1px solid black; border-radius: 5px;">
+                <button class="btn btn-outline-dark" id="search-btn" type="submit" style="border: none;"><img src="https://i.ibb.co/ymN02CH3/search.png" alt="Search" height="26px" width="auto"></button>
+                <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search" style="border: none;">
+              </form>
+              <a href="#" class="text-dark icon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Favourites"><span class="mdi-light--heart"></span></a>
+              <a href="#" class="text-dark icon"><span class="ph--bag-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bag Items: 0"></span></a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Carrousel-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center" style="background-color: rgb(229, 228, 228); padding: 1px 0px;">
+            <p>Introducing Afterpay</p>
+            <p style="font-size: small;">Shop Now, Pay Later</p>
+          </div>
+          <div class="carousel-item text-center" style="background-color: rgb(229, 228, 228); padding: 1px 0px;">
+            <p>Nike By You Is Leaving Soon</p>
+            <p style="font-size: small;">Place your order by 6 Apr 23:59</p>
+          </div>
+          <div class="carousel-item text-center" style="background-color: rgb(229, 228, 228); padding: 1px 0px;">
+            <p>Temporary Timeout Coming 10 April</p>
+            <p style="font-size: small;">We're making upgrades to better serve athletes in Australia36</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- Men Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" style="position: sticky; top: 0; z-index: 1000;">
+      <div class="container-fluid px-4">
+        <!-- Logo -->
+        <a class="navbar-brand" href="./index.html"><h4>Men</h4></a>
+    
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse justify-content-center nav3">
+          <ul class="navbar-nav justify-content-center me-auto mb-2 mb-lg-0 mx-auto fw-semibold">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Shoes</a>
+            </li>
+            <li class="nav-item">
+              <a href="./men.html" class="nav-link">Clothing</a>
+            </li>
+            <li class="nav-item">
+              <a href="./women.html" class="nav-link">Gear</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div>
+      <div class="row">
+        <div class="col-md-6" style="padding: 0%;">
+          <img src="https://i.ibb.co/xSdxwC72/hero-left.png" alt="Nike Shoes" style="width: 100%; height: auto;">
+        </div>
+        <div class="col-md-6 hero-video" style="padding: 0%;">
+          <div style="position:relative; width:100%; height:0px; padding-bottom:75.000%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/sgy5xh?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>        </div>
+      </div>
+
+    </div>
+
+    <!-- Just In Section -->
+    <div>
+      <div class="row text-center" style="padding: 20px 0px;">
+        <h5>Just In</h5>
+        <h1>AIR MAX DN8</h1>
+        <h6>Witness Japanese skateboarder Yuto Horigome's precise movements</h6>
+        <h6>in the latest chapter of Dynamic Air</h6>
+        <a href="#">
+          <button id="shop-btn">Shop</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- New & Featured Section -->
+    <div class="container">
+      <h3>New & Featured</h3>
+      <div class="row" style="overflow-x: scroll; overflow-y: hidden;">
+        <div class="flex-container" style="display: flex; justify-content: space-between; padding: 20px 0px;">
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-12 col-md-4 scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/Myd7GK7c/download.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">Max cushioning for the ultimate ride</p>
+              </div>
+          </div>
+          </div>
+
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-12 col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/21Y20b3z/card1-2.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">2025/26 Australia National Team Kit</p>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-12 col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/SXP0bMfS/images-2.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">Mad Energy Pack</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-12 col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/gL3K34Jw/download-1.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">Ready For Victory</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-12 col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/1Y2HFRjB/images.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">Race Day Ready</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-12 col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/twsp5gZV/card1-6.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <div class="card-body">
+                <p class="card-text">Coming Soon: Air Max Dn8</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <!-- New Arrivals Section -->
+    <div class="container">
+      <h3>New Arrivals</h3>
+      <div class="row" style="overflow-x: scroll; overflow-y: hidden;">
+        <div class="flex-container" style="display: flex; justify-content: space-between; padding: 20px 0px;">
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/d4vhfvDH/air-max-dn8-shoes-Nmd8-QG.jpg" class="card-img-top" alt="Nike C" style="width: 100%; height: auto;">
+              <h5 class="card-title">Nike Solo Swoosh</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Men's 1/4-Zip Top</h6>
+              <p class="card-text">$120</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/pjWscDm9/miler-run-energy-dri-fit-short-sleeve-running-top-3v-M0f1.webp" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <h5 class="card-title">Nike Miler Run Energy</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Men's Dri-FIT Short-Sleeve Running Top</h6>
+              <p class="card-text">$55</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/HDVRDWMP/unlimited-dri-fit-18cm-unlined-versatile-shorts-8-Thc5m.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <h5 class="card-title">Nike Unlimited</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Men's Dri-FIT 18cm (approx.) Unlined Versatile Shorts</h6>
+              <p class="card-text">$70</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/RpwWyTQg/club-unstructured-futura-wash-cap-b1s-Dph.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <h5 class="card-title">Nike Club</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Unstructured Futura Wash Cap</h6>
+              <p class="card-text">$35</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 img-card" style="width: 30%;">
+            <div class="col-md-4 card scale-card" style="width: 100%;">
+              <img src="https://i.ibb.co/HTSPx5KT/sportswear-essentials-sling-bag-PHv23d.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+              <h5 class="card-title">Nike Sportswear Essentials</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Sling Bag (8L)</h6>
+              <p class="card-text">$70</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+
+    <!-- Shop By Sport Section -->
+    <div class="container">
+      <div class="row">
+        <h3>Shop By Sport</h3>
+        <div class="flex-container" style="display: flex; justify-content: space-between; padding: 20px 0px; overflow-x: scroll;">
+
+          <a href="#">
+            <div class="col-12 col-md-4 img-card" style="width: 30%; height: fit-content;">
+              <div class="col-md-4 card scale-card" style="width: 100%;">
+                <img src="https://i.ibb.co/YBSs0X7q/men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+                <a href="#"><button class="shoe-btn">Football</button></a>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="col-12 col-md-4 img-card" style="width: 30%; height: fit-content;">
+              <div class="col-md-4 card scale-card" style="width: 100%;">
+                <img src="https://i.ibb.co/23knythz/men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+                <a href="#"><button class="shoe-btn">Tennis</button></a>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="col-12 col-md-4 img-card" style="width: 30%; height: fit-content;">
+              <div class="col-md-4 card scale-card" style="width: 100%;">
+                <img src="https://i.ibb.co/WvXMpx4q/men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: auto;">
+                <a href="#"><button class="shoe-btn">Running</button></a>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="col-12 col-md-4 img-card" style="width: 30%; height: fit-content;">
+              <div class="col-md-4 card scale-card" style="width: 100%;">
+                <img src="https://i.ibb.co/1J8gLFwW/men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 100%;">
+                <a href="#"><button class="shoe-btn">Basketball</button></a>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="col-12 col-md-4 img-card" style="width: 30%; height: fit-content;">
+              <div class="col-md-4 card scale-card" style="width: 100%;">
+                <img src="https://i.ibb.co/600s2NvX/men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 100%;">
+                <a href="#"><button class="shoe-btn">Skateboarding</button></a>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Top Footwear Selects Section-->
+     <div class="container">
+      <div class="row">
+        <h3>Top Footwear Selects</h3>
+        <div id="carouselExampleControls" class="carousel slide desktop-carousel" data-bs-ride="carousel" style="height: 60%;">
+          <div class="carousel-inner" style="height: 60%;">
+            <div class="carousel-item active" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: fit-content;">
+                <a href="#">
+                  <div class="col-12 col-md-3 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-3 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/Q5Snt9b/download-2.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+      
+                <a href="#">
+                  <div class="col-12 col-md-3 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-3 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/k6VGzZYg/download-3.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+      
+                <a href="#">
+                  <div class="col-12 col-md-3 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-3 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/kVYXR4GB/download-4.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="col-12 col-md-3 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-3 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/tMNqpPPV/download-5.jpg" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/YFcFhSnx/download-6.jpg" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: 60%;">
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/7tTXt71V/download-7.jpg" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+      
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/prM6DSx5/download-8.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+      
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/7NXBBsSD/download-9.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/7tTXt71V/download-7.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/Q5Snt9b/download-2.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+  
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Mobile Carousel-->
+        <div id="carouselExampleControls" class="carousel slide mobile-carousel" data-bs-ride="carousel" style="height: 60%;">
+          <div class="carousel-inner" style="height: 60%;">
+            <div class="carousel-item active" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: fit-content;">
+                <a href="#">
+                  <div class="col-12 col-md-3 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-3 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/Q5Snt9b/download-2.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+      
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: fit-content;">
+                <a href="#">
+                  <div class="col-12 col-md-3 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-3 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/k6VGzZYg/download-3.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+      
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: fit-content;">
+                <a href="#">
+                  <div class="col-12 col-md-3 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-3 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/kVYXR4GB/download-4.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: fit-content;">
+                <a href="#">
+                  <div class="col-12 col-md-3 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-3 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/tMNqpPPV/download-5.jpg" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: fit-content;">
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/YFcFhSnx/download-6.jpg" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>  
+
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: 60%;">
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/7tTXt71V/download-7.jpg" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: 60%;">
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/prM6DSx5/download-8.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+      
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: 60%;">
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/7NXBBsSD/download-9.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: 60%;">
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/7tTXt71V/download-7.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="height: 60%;">
+              <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px; height: 60%;">
+                <a href="#">
+                  <div class="col-12 col-md-4 img-card" style="width: 100%; height: 60%;">
+                    <div class="col-md-4 card img-card" style="width: 100%; height: 60%;">
+                      <img src="https://i.ibb.co/Q5Snt9b/download-2.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+      </div>
+     </div>
+
+    <!-- Apps & Membership Section -->
+    <div class="container">
+      <div class="row">
+        <h3>Apps & Membership</h3>
+
+        <div class="flex-container apps-container" style="display: flex; justify-content: space-between; padding: 20px 0px;">
+          
+          <a href="#">
+            <div class="col-12 col-md-4 img-card" style="width: 30%;">
+              <div class="col-md-4 card img-card" style="width: 100%;">
+                <img src="https://i.ibb.co/8n0fKDmp/men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                <h6 class="card-overlay-top">Member Product</h6>
+                <h5 class="card-overlay">Your Exclusive Access</h5>
+                <a href="#"><button class="shoe-btn">Shop</button></a>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="col-12 col-md-4 img-card" style="width: 30%;">
+              <div class="col-md-4 card img-card" style="width: 100%;">
+                <img src="https://i.ibb.co/jv9TzbCY/men-s-shoes-clothing-accessories.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                <h6 class="card-overlay-top">Member Rewards</h6>
+                <h5 class="card-overlay">How We Say Thank You</h5>
+                <a href="#"><button class="shoe-btn">Celebrate</button></a>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="col-12 col-md-4 img-card" style="width: 30%;">
+              <div class="col-md-4 card img-card" style="width: 100%;">
+                <img src="https://i.ibb.co/ch125YtY/nrc-guided-runs-speed.jpg" class="card-img-top" alt="Nike Shoes" style="width: 100%; height: 426px;">
+                <h6 class="card-overlay-top">Sports & Wellness Apps</h6>
+                <h5 class="card-overlay">Movement Where You're At</h5>
+                <a href="#"><button class="shoe-btn">Move</button></a>
+              </div>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Footer -->
+     <footer class="footer low-footer">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-2 footer-links">
+            <h5 class="shoes-heading">Men's Shoes</h5>
+            <ul class="list-unstyled text-decoration-none shoes-menu">
+              <li><a href="#" class="text-decoration-none text-muted">Men's High Tops</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Men's Cross Training Shoes</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Nike Men's Track Spikes</a></li>
+              <li><a href="#" class="text-decoration-none text-muted">Men's Weightlifting Shoes</a></li>
+              <div class="extra-links">
+                <li><a href="#" class="text-decoration-none text-muted">Men's Trail Running Shoes</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Astro Trainers</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Running Spikes</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Nike P-6000 Men's</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Waterproof Trainers</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Nike Vomero Shoes</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's GORE-TEX Running Shoes</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Air Max Dn Shoes</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Nike Initiator Shoes</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Nike V2K Shoes</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's GORE-TEX Trainers</a></li>
+              </div>
+            </ul>
+            </div>
+            <div class="col-md-2 footer-links">
+              <h5>Men's Clothing & Gear</h5>
+              <ul class="list-unstyled text-decoration-none">
+                <li><a href="#" class="text-decoration-none text-muted">T-Shirts for Men</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Tank Tops</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's 2 in 1 Shorts</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Football Shorts</a></li>
+                <div class="extra-links">
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Running Pants</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Gym Gloves</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Tech Fleece</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Black Compression Shirts</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Tracksuit Bottoms Sale</a></li>
+                </div>
+  
+              </ul>
+            </div>
+            <div class="col-md-2 footer-links">
+              <h5>Collections</h5>
+              <ul class="list-unstyled text-decoration-none">
+                <li><a href="#" class="text-decoration-none text-muted">Men's Nike Air Max</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Nike Air Max 90</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Huaraches</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Nike Cortez Men's</a></li>
+                <div class="extra-links">
+                  <li><a href="#" class="text-decoration-none text-muted">Nike Presto Men</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Nike Air Max 95</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Air Max 97</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Nike Flyknit Men's</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Air Max 1</a></li>
+                </div>
+
+              </ul>
+
+            </div>
+            <div class="col-md-2 footer-links">
+              <h5>Featured</h5>
+              <ul class="list-unstyled text-decoration-none">
+                <li><a href="#" class="text-decoration-none text-muted">Nike Run Club</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Nike Training Club</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Sportswear</a></li>
+                <li><a href="#" class="text-decoration-none text-muted">Men's Yoga</a></li>
+                <div class="extra-links">
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Compression Base Layer Bottoms</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Compression Baselayer Shirts</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's White Socks</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Running Gifts</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Winter Wear Jackets</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Men's Winter Running Clothes</a></li>
+                  <li><a href="#" class="text-decoration-none text-muted">Gifts For Men</a></li>
+                </div>
+              </ul>
+            </div>
+            <div class="col-md-2"></div>
+      </div>
+     </footer>
+
+     <br><br><br>
+     <hr>
+
+     <!-- Lower Footer-->
+     <footer class="footer lower-footer" style="padding: 50px;">
+      <div class="row">
+        <div class="col-md-2">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-decoration-none">
+            <li><a href="#" class="text-decoration-none text-muted">Find a Store</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Become a Member</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Help</h5>
+          <ul class="list-unstyled text-decoration-none">
+            <li><a href="#" class="text-decoration-none text-muted">Get Help</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Order Status</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Shipping and Delivery</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Returns</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Payment Options</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Contact Us</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Company</h5>
+          <ul class="list-unstyled text-decoration-none">
+            <li><a href="#" class="text-decoration-none text-muted">About Nike</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">News</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Careers</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Returns</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Investors</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Franchise</h5>
+          <ul class="list-unstyled text-decoration-none">
+            <li><a href="#" class="text-decoration-none text-muted">Air Force 1</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Air Jordan 1</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Pegasus</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+          <a href="#" style="text-decoration: none; color: black;">
+            <h5><span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-width="1">
+                  <ellipse cx="12" cy="12.006" rx="3.095" ry="7.998" />
+                  <circle cx="12" cy="12" r="8" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4 11.995l16 .01" />
+                </g>
+              </svg>
+            </span>Australia</h5>
+          </a>
+        </div>
+      </div>
+     </footer>
+     <br><br><br>
+
+     <footer class="footer lowest-footer" style="padding: 50px;">
+      <div class="row">
+        <div class="col-md-2">
+          <p class="text-muted">&copy; 2025 Nike, Inc. All rights reserved</p>
+        </div>
+        <div class="col-md-1">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle bg-light border-none text-muted" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="width: fit-content; padding: 0px; border-radius: 0px; background-color: white !important; margin: 0;">
+              <a href="#" class="text-decoration-none text-muted" style="font-size: small;">Guides</a>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Nike Air</a></li>
+              <li><a class="dropdown-item" href="#">Nike Air Max</a></li>
+              <li><a class="dropdown-item" href="#">Nike Fly Ease</a></li>
+              <li><a class="dropdown-item" href="#">Nike Pegasus</a></li>
+              <li><a class="dropdown-item" href="#">Nike React</a></li>
+              <li><a class="dropdown-item" href="#">Nike Vaporfly</a></li>
+            </ul>
+          </div>        
+        </div>
+        <div class="col-md-1">
+          <a href="#" class="text-decoration-none text-muted">Terms of Use</a>
+        </div>
+        <div class="col-md-1">
+          <a href="#" class="text-decoration-none text-muted">Terms of Sale</a>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="text-decoration-none text-muted">Privacy & Cookie Policy</a>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="text-decoration-none text-muted">Privacy & Cookie Setting</a>
+        </div>
+      </div>
+     </footer>
+    <!-- Bootstrap JS Bundle (needed for navbar toggler to work) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      
+
+    </script>
+     
+  </body>
+</html>
